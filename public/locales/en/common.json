@@ -1,0 +1,59 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "login": "Login",
+    "logout": "Logout",
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "about": "About",
+    "cart": "Cart",
+    "search": "Search",
+    "language": "Language"
+  },
+  "auth": {
+    "signInWithGoogle": "Sign in with Google",
+    "signOut": "Sign out",
+    "welcomeBack": "Welcome back!",
+    "notAuthenticated": "You are not signed in"
+  },
+  "products": {
+    "title": "Our Products",
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details",
+    "price": "Price",
+    "category": "Category",
+    "description": "Description",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Send us a message and we'll respond soon",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again.",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "your@email.com",
+    "subjectPlaceholder": "Message subject",
+    "messagePlaceholder": "Write your message here..."
+  },
+  "validation": {
+    "required": "This field is required",
+    "emailInvalid": "Invalid email address",
+    "minLength": "Must be at least {{min}} characters",
+    "maxLength": "Must be at most {{max}} characters"
+  },
+  "cart": {
+    "title": "My Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove"
+  }
+}

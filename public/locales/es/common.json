@@ -1,0 +1,59 @@
+{
+  "common": {
+    "welcome": "Bienvenido",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "home": "Inicio",
+    "products": "Productos",
+    "contact": "Contacto",
+    "about": "Acerca de",
+    "cart": "Carrito",
+    "search": "Buscar",
+    "language": "Idioma"
+  },
+  "auth": {
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "signOut": "Cerrar sesión",
+    "welcomeBack": "¡Bienvenido de nuevo!",
+    "notAuthenticated": "No has iniciado sesión"
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "addToCart": "Agregar al Carrito",
+    "viewDetails": "Ver Detalles",
+    "price": "Precio",
+    "category": "Categoría",
+    "description": "Descripción",
+    "inStock": "En Stock",
+    "outOfStock": "Agotado"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Envíanos un mensaje y te responderemos pronto",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado exitosamente!",
+    "error": "Error al enviar el mensaje. Inténtalo de nuevo.",
+    "namePlaceholder": "Tu nombre completo",
+    "emailPlaceholder": "tu@email.com",
+    "subjectPlaceholder": "Asunto del mensaje",
+    "messagePlaceholder": "Escribe tu mensaje aquí..."
+  },
+  "validation": {
+    "required": "Este campo es requerido",
+    "emailInvalid": "Correo electrónico inválido",
+    "minLength": "Debe tener al menos {{min}} caracteres",
+    "maxLength": "Debe tener máximo {{max}} caracteres"
+  },
+  "cart": {
+    "title": "Mi Carrito",
+    "empty": "Tu carrito está vacío",
+    "total": "Total",
+    "checkout": "Proceder al Pago",
+    "remove": "Eliminar"
+  }
+}
