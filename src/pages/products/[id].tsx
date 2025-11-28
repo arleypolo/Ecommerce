@@ -27,7 +27,7 @@ const mockProducts: Product[] = [
 ];
 
 interface ProductDetailProps {
-    product: Product | null;
+    product: (Omit<Product, 'createdAt'> & { createdAt: string }) | null;
 }
 
 export default function ProductDetail({ product }: ProductDetailProps) {
@@ -144,9 +144,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
     const product = mockProducts.find((p) => p.id === params?.id) || null;
 
+    // Convertir Date a string para que sea serializable
+    const serializedProduct = product ? {
+        ...product,
+        createdAt: typeof product.createdAt === 'string' ? product.createdAt : product.createdAt.toISOString(),
+    } : null;
+
     return {
         props: {
-            product,
+            product: serializedProduct,
             ...(await serverSideTranslations(locale || 'es', ['common'])),
         },
         revalidate: 60,

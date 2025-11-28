@@ -322,9 +322,39 @@ Ecommerce/
 
 ---
 
-## 🚀 Próximos Pasos
+## 🚀 Despliegue en Vercel
 
-- [ ] Implementar base de datos
+### Pasos Rápidos
+
+1. **Subir a GitHub**
+   ```bash
+   git init
+   git add .
+   git commit -m "Deploy to Vercel"
+   git branch -M main
+   git remote add origin https://github.com/TU-USUARIO/TU-REPO.git
+   git push -u origin main
+   ```
+
+2. **Desplegar en Vercel**
+   - Ve a [vercel.com](https://vercel.com)
+   - Importa tu repositorio de GitHub
+   - Configura las variables de entorno (ver `.env.example`)
+   - Deploy!
+
+3. **Actualizar Google OAuth**
+   - Agrega tu URL de Vercel a las URLs autorizadas en Google Cloud Console
+   - Formato: `https://tu-app.vercel.app/api/auth/callback/google`
+
+📖 **Guía completa**: Lee `DEPLOY.md` para instrucciones detalladas
+
+⚠️ **Importante**: Los usuarios y productos están en memoria. Para producción, necesitas una base de datos real.
+
+---
+
+## 🎯 Próximos Pasos
+
+- [ ] Implementar base de datos (MongoDB/PostgreSQL)
 - [ ] Sistema de pagos (Stripe/PayPal)
 - [ ] Historial de pedidos
 - [ ] Búsqueda y filtros de productos

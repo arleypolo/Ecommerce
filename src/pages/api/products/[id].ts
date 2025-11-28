@@ -21,7 +21,12 @@ export default async function handler(
       if (!product) {
         return res.status(404).json({ message: 'Product not found' });
       }
-      return res.status(200).json(product);
+      // Serializar fecha
+      const serializedProduct = {
+        ...product,
+        createdAt: product.createdAt.toISOString(),
+      };
+      return res.status(200).json(serializedProduct);
     } catch (error: any) {
       return res.status(500).json({ message: 'Error fetching product', error: error.message });
     }
@@ -47,7 +52,12 @@ export default async function handler(
       if (!updatedProduct) {
         return res.status(404).json({ message: 'Product not found' });
       }
-      return res.status(200).json(updatedProduct);
+      // Serializar fecha
+      const serializedProduct = {
+        ...updatedProduct,
+        createdAt: updatedProduct.createdAt.toISOString(),
+      };
+      return res.status(200).json(serializedProduct);
     } catch (error: any) {
       return res.status(400).json({ message: 'Error updating product', error: error.message });
     }

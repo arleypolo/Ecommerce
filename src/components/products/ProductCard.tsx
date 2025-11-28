@@ -18,9 +18,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails }) => 
 
   const handleAddToCart = () => {
     addToCart({ ...product, quantity: 1 });
-    toast.success(`${product.name} agregado al carrito`, {
-      icon: '🛒',
-    });
+    toast.success(`🛒 ${product.name} agregado al carrito`);
   };
 
   return (

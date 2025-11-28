@@ -12,7 +12,12 @@ export default async function handler(
   if (req.method === 'GET') {
     try {
       const products = getAllProducts();
-      return res.status(200).json(products);
+      // Serializar fechas
+      const serializedProducts = products.map(p => ({
+        ...p,
+        createdAt: p.createdAt.toISOString(),
+      }));
+      return res.status(200).json(serializedProducts);
     } catch (error: any) {
       return res.status(500).json({ message: 'Error fetching products', error: error.message });
     }
@@ -35,7 +40,12 @@ export default async function handler(
       await productFormSchema.validate(req.body);
 
       const newProduct = createProduct(req.body);
-      return res.status(201).json(newProduct);
+      // Serializar fecha
+      const serializedProduct = {
+        ...newProduct,
+        createdAt: newProduct.createdAt.toISOString(),
+      };
+      return res.status(201).json(serializedProduct);
     } catch (error: any) {
       return res.status(400).json({ message: 'Error creating product', error: error.message });
     }

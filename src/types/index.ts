@@ -7,7 +7,7 @@ export interface Product {
   imageUrl: string;
   imagePublicId: string;
   stock: number;
-  createdAt: Date;
+  createdAt: Date | string;
 }
 
 export interface CartItem extends Product {
